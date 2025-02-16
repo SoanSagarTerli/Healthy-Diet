@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dinner Recipes</title>
     <style>
-        /* General Styles */
         body {
             font-family: 'Poppins', sans-serif;
             margin: 0;
@@ -16,19 +15,21 @@
             background-repeat: no-repeat;
             background-attachment: fixed;
             color: #fff;
+            overflow-x: hidden;
         }
 
-        /* Header Styles */
         header {
             background: linear-gradient(90deg, rgba(40, 167, 69, 0.8), rgba(72, 201, 176, 0.8));
-            color: white;
-            padding: 1.5rem;
+            color: #fff;
+            padding: 1.5rem 1rem;
             text-align: center;
             font-size: 2.5rem;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            position: sticky;
+            top: 0;
+            z-index: 10;
         }
 
-        /* Navigation Styles */
         nav {
             display: flex;
             justify-content: center;
@@ -38,7 +39,7 @@
         }
 
         nav a {
-            color: white;
+            color: #fff;
             text-decoration: none;
             margin: 0 1rem;
             font-size: 1.2rem;
@@ -52,7 +53,6 @@
             transform: scale(1.1);
         }
 
-        /* Container Styling */
         .container {
             text-align: center;
             padding: 3rem 2rem;
@@ -65,13 +65,6 @@
             backdrop-filter: blur(5px);
         }
 
-        .container h2 {
-            font-size: 2rem;
-            margin-bottom: 2rem;
-            color: #f5f5f5;
-        }
-
-        /* Recipe Card Styling */
         .recipe {
             background: rgba(255, 255, 255, 0.9);
             margin: 1rem auto;
@@ -103,11 +96,15 @@
             font-size: 1rem;
             color: #333;
         }
+
+        * {
+            transition: all 0.3s ease;
+        }
     </style>
 </head>
 <body>
     <header>
-        <h1>Dinner Recipes</h1>
+        <h1>Dinner Delights</h1>
     </header>
     <nav>
         <a href="index.html">Home</a>
@@ -115,7 +112,6 @@
         <a href="lunch.html">Lunch</a>
     </nav>
     <div class="container">
-        <h2>Choose a Recipe:</h2>
         <div class="recipe">
             <h3><a href="recipe8.html">Lentil Soup with Whole Wheat Chapati</a></h3>
             <p>A light and nutritious lentil soup paired with wholesome chapati.</p>
