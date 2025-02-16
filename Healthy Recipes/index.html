@@ -3,14 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Healthy Recipes</title>
+    <title>Dinner Recipes</title>
     <style>
-        /* General Styles */
         body {
             font-family: 'Poppins', sans-serif;
             margin: 0;
             padding: 0;
-            background-image: url("https://img.freepik.com/premium-photo/animestyle-illustration-young-man-cooking-kitchen_36682-149911.jpg?w=826");
+            background-image: url("https://img.freepik.com/premium-photo/healthy-dinner-table-filled-with-variety-nutritious-dishes_73523-630.jpg");
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
@@ -19,9 +18,8 @@
             overflow-x: hidden;
         }
 
-        /* Header Styles */
         header {
-            background: linear-gradient(90deg, rgba(40,167,69,0.8), rgba(72,201,176,0.8));
+            background: linear-gradient(90deg, rgba(255, 140, 0, 0.8), rgba(255, 99, 71, 0.8));
             color: #fff;
             padding: 1.5rem 1rem;
             text-align: center;
@@ -32,11 +30,10 @@
             z-index: 10;
         }
 
-        /* Navigation Styles */
         nav {
             display: flex;
             justify-content: center;
-            background: rgba(33,136,56,0.8);
+            background: rgba(255, 69, 0, 0.8);
             padding: 0.8rem 0;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
         }
@@ -56,52 +53,50 @@
             transform: scale(1.1);
         }
 
-        /* Container and Text */
         .container {
             text-align: center;
             padding: 3rem 2rem;
-            background: rgba(0, 0, 0, 0.5);
+            background: rgba(0, 0, 0, 0.6);
             border-radius: 15px;
             margin: 2rem auto;
-            width: 80%;
-            max-width: 800px;
+            width: 90%;
+            max-width: 1000px;
             box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
             backdrop-filter: blur(5px);
         }
 
-        .container h2 {
-            font-size: 2rem;
-            margin-bottom: 1rem;
-            color: #28a745;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        .recipe {
+            background: rgba(255, 255, 255, 0.9);
+            margin: 1rem auto;
+            padding: 1.5rem;
+            border-radius: 10px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+            max-width: 600px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
 
-        .container p {
-            font-size: 1.2rem;
-            line-height: 1.6;
+        .recipe:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
         }
 
-        /* Buttons or Links in the Card */
-        .card a {
-            color: #28a745;
-            font-size: 1.1rem;
-            font-weight: bold;
+        .recipe h3 {
+            color: #ff4500;
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .recipe a {
             text-decoration: none;
-            padding: 0.5rem 1rem;
-            border-radius: 5px;
-            background: rgba(255, 255, 255, 0.8);
-            transition: all 0.3s ease;
-            display: inline-block;
-            margin-top: 1rem;
+            color: #b22222;
+            font-weight: bold;
         }
 
-        .card a:hover {
-            background: #28a745;
-            color: #fff;
-            transform: scale(1.05);
+        .recipe p {
+            font-size: 1rem;
+            color: #333;
         }
 
-        /* Smooth animations for the page */
         * {
             transition: all 0.3s ease;
         }
@@ -109,17 +104,28 @@
 </head>
 <body>
     <header>
-        <h1>Healthy Recipes</h1>
+        <h1>Delicious Dinner Ideas</h1>
     </header>
     <nav>
+        <a href="index.html">Home</a>
         <a href="breakfast.html">Breakfast</a>
         <a href="lunch.html">Lunch</a>
-        <a href="dinner.html">Dinner</a>
     </nav>
-    <br><br>
     <div class="container">
-        <h2>Welcome to Healthy Recipes!</h2><br>
-        <p>Explore a variety of delicious and healthy recipes tailored for breakfast, lunch, and dinner. Click on a tab to begin!</p>
+        <h2>Explore Nutritious Dinner Options</h2>
+        <p>Discover healthy and tasty dinner recipes made with fresh, wholesome ingredients. Perfect for a balanced diet!</p>
+        <div class="recipe">
+            <h3><a href="recipe8.html">Grilled Salmon with Quinoa Salad</a></h3>
+            <p>A protein-packed meal featuring omega-3 rich salmon and fiber-filled quinoa.</p>
+        </div>
+        <div class="recipe">
+            <h3><a href="recipe9.html">Stuffed Bell Peppers</a></h3>
+            <p>Bell peppers filled with a mix of lean meat, vegetables, and brown rice.</p>
+        </div>
+        <div class="recipe">
+            <h3><a href="recipe10.html">Spinach and Chickpea Stew</a></h3>
+            <p>A hearty and nourishing stew packed with iron-rich spinach and protein-rich chickpeas.</p>
+        </div>
     </div>
 </body>
 </html>
